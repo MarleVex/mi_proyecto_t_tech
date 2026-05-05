@@ -1,0 +1,296 @@
+/*fuentes de google */
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+
+body {
+    background-color: #1e1e2e; 
+    color: #cdd6f4;
+    font-family: 'JetBrains Mono', monospace;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/*mi header*/
+
+header {
+    background: #181825;
+    padding: 1rem;
+    border-bottom: 2px solid #cba6f7;
+}
+
+/* el texto y logo*/
+
+.brand-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+}
+
+.header-description h1 {
+    margin: 0;
+    color: #cba6f7;
+}
+.header-description p {
+    margin: 0.5rem 0 0 0;
+    font-size: 0.9;
+    max-width: 600px;
+}
+
+/*video*/
+
+#presentacion {
+    display: flex;
+    justify-content: center;
+    padding: 3rem 1rem;
+}
+#presentacion {
+    flex-direction: column;
+    align-items: center;
+}
+
+video {
+    border: 2px solid #cba6f7;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    max-width: 100%;
+}
+
+.warning-text {
+    font-size: 0.8rem;
+    color: #727272;
+    margin-top: 1rem;
+    font-style: italic;
+}
+
+/*mis nav */
+
+.nav-list {
+    display: flex; 
+    justify-content: space-around; 
+    list-style: none;
+    padding: 0;
+}
+
+.nav-list a {
+    color: #cba6f7;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*mis cards*/
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+}
+
+.card {
+    background: #181825;
+    border: 1px solid #313244;
+    border-top: 3px solid #cba6f7;
+    border-radius: 8px;
+    width: 320px;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #cba6f7;
+    box-shadow: 0 5px 15px rgba(203, 166, 247, 0.1);
+}
+
+.card h3 {
+    color: #cba6f7;
+    margin-top: 0;
+    text-align: center;
+    border-bottom: 1px solid #313244;
+    padding-bottom: 0.5rem;
+}
+
+.card ul {
+    padding-left: 1.2rem;
+    font-size: 0.9rem;
+}
+
+.card li {
+    margin-bottom: 0.8rem;
+}
+
+.filosofia {
+    font-size: 0.85rem;
+    color: #f5c2e7;
+    text-align: center;
+    margin-top: 1rem;
+    border-top: 1px dashed #313244;
+    padding-top: 0.5rem;
+}
+
+/*mi contacto*/
+
+#contacto {
+    padding: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contacto-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contacto-form label {
+    font-weight: bold;
+    color: #cba6f7;
+    margin-bottom: -0.5rem;
+}
+
+.contacto-form input, 
+.contacto-form textarea {
+    background: #11111b;
+    border: 1px solid #313244;
+    color: #cdd6f4;
+    padding: 0.8rem;
+    border-radius: 4px;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.contacto-form input:focus, 
+.contacto-form textarea:focus {
+    outline: none;
+    border-color: #cba6f7;
+}
+
+.contacto-form button {
+    background: #cba6f7;
+    color: #11111b;
+    border: none;
+    padding: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contacto-form button:hover {
+    background: #b4befe;
+}
+
+/*footer*/
+
+footer {
+    background: #0d0d14;
+    color: #a6adc8;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
+    border-top: 1px solid #313244;
+}
+
+footer h3 {
+    font-size: 1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+/*lo que va en sobre mi */
+
+.sobre-mi-container {
+    padding: 2rem;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.bio-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background: #181825;
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid #313244;
+}
+
+
+.bio-text-group {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.bio-section {
+    border-left: 3px solid #cba6f7;
+    padding-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bio-section p, .bio-section h2 {
+    width: 100%;
+    text-align: left;
+}
+
+/* Control de imágenes en "Sobre Mí" */
+.bio-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.img-styled {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 15px;
+    border: 2px solid #cba6f7;
+    box-shadow: 0 0 20px rgba(203, 166, 247, 0.2);
+}
+
+.mini-icon {
+    width: 300px;
+    height: auto;
+    margin-top: 10px;
+}
+
+.laptop-img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    margin-top: 15px;
+    border: 1px solid #313244;
+}
+
+@media (max-width: 850px) {
+    .bio-content {
+        flex-direction: column-reverse; /*esto me lo recomendo la ia porque ayuda a moviles, supongo que lo vere cuando este en el celu*/
+    }
+    
+    .bio-text-group {
+        width: 100%;
+    }
+}
+
+.despedida-container {
+    margin-top: 3rem;
+    text-align: center;
+    padding: 2rem;
+    background: #181825;
+    border-radius: 12px;
+    border: 1px solid #313244;
+}
+
+.despedida-container p {
+    font-size: 1.2rem;
+    color: #cba6f7;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}

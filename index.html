@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre_Mi</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+
+    <header>
+
+      <div class="header-top">
+          <div class="brand-container">
+              <img src="assets/logo.png" alt="logotipo de la web" width="250" height="175">  
+              <div class="header-description">
+                <h1>Mi web personal</h1>
+                <h2>Sobre mi: </h2>
+                <p>Estudiante de Ciencias de la Computacion UBA, Entusiasta de Linux y Futura Desarrolladora Freelance</p>
+              </div>
+          </div>
+      </div>
+
+      <nav>
+
+        <ul class="nav-list">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="habilidades.html">Mas sobre mi</a></li>
+          <li><a href="misvideojuegos.html">Videojuegos</a></li>
+          <li><a href="gatos.html">Gatos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+
+      </nav>
+
+    </header>
+
+    <main>
+
+      <section id="presentacion">
+        <video controls muted poster="preview.jpg" width="600" height="400">
+          <source src="assets/video.mp4" type="video/mp4">
+          <track src="subtitulos.vtt" kind="subtitles" srlang="es" label="español">
+        </video>
+        <p class="warning-text">baja el volumen porfis, no tuve tiempo para ver como hacer que no sea tan fuerte por los parciales... pero ya lo resolvere!</p>
+      </section>
+
+      <section id="servicios">
+        <div class="card-container">
+          <article class="card">
+            <h3>Software</h3>
+            <ul> 
+              <li><strong>Python:</strong> Scripts para tareas rutinarias, descargas web y algun que otro proyecto personal</li>
+              <li><strong>Web;</strong> Html, Css y Javascript: aun aprendiendo</li>
+              <li><strong>C/C++:</strong> Mi proxima meta</li>
+              <p class="filosofia"><em>Nunca se deja de aprender!</em></p>
+            </ul>
+
+          </article>
+
+          <article class="card">
+            <h3>Hardware</h3>
+            <ul>
+              <li>Mantenimiento y optimizacion de sistemas windows y linux</li>
+              <li>Instalacion de Sistemas operativos optimizados</li>
+              <li>Armado y desarmado de computadoras</li>
+              <li>Upgrades a pedido del cliente</li>
+              <li>Soldaduras de componentes no muy complejos</li>
+              <p class="filosofia"><em>"se aprende tocando y rompiendo sin miedo"</em></p>
+            </ul>
+
+            </article>
+
+          <article class="card">
+            <h3>Proyectos Personales</h3>
+            <ul>
+              <li><strong>Servidor Casero:</strong> use piezas de pcs viejos para armar un servidor para mis cosas personales, como un drive privado, servidores de minecraft, etc.</li>
+              <li><strong>Linux:</strong> llevo experimentando años con esto, el servidor tiene ubuntu server pero pienso mudarlo a debian solo por el reto</li>
+              <li><strong>Talento Tech:</strong> cursando como clases extra ya que me gustaria mejorar este ambito, si bien me llaman mas los servidores y backend, tener una estructura fuerte pero una cara fea espanda clientes a mi parecer</li>
+            </ul>
+          </article>
+
+        </div>
+      </section>
+
+      <section id="contacto">
+        <h2>Contactame! :3</h2>
+        <form action="https://formspree.io/f/mnjwdedz" method="POST" class="contacto-form">
+          <label for="nombre">Tu nombre: </label>
+          <input type="text" id="nombre" name="name" required>
+          <label for="email">Tu correo:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="mensaje">Mensaje: </label>
+          <textarea id="mensaje" name="message" required></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+
+      </section>
+    </main>
+  
+    <footer>
+      <h3>dev by marlevex</h3>
+    </footer>
+
+  </body>
+
+</html>
+
+
